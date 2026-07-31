@@ -46,6 +46,9 @@ magic_map = {
     "3.11": b"\xa7\r\r\n\x00\x00\x00\x004\x0eAi\n\x00\x00\x00",
     "3.12": b"\xcb\r\r\n\x00\x00\x00\x00{\x0eAi\n\x00\x00\x00",
     "3.13": b"\xf3\r\r\n\x00\x00\x00\x00\x90\x0eAi\n\x00\x00\x00",
+    "3.14": b"+\x0e\r\n\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00",
+    # magic number reference.
+    # https://github.com/python/cpython/blob/main/Include/internal/pycore_magic_number.h
 }
 
 
