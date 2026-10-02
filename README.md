@@ -6,7 +6,7 @@
 
 ### Marshal → PYC Converter & Python Bytecode Decompiler
 
-[![Python](https://img.shields.io/badge/Python-3.6%20→%203.13-blue?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
+[![Python](https://img.shields.io/badge/Python-3.6%20→%203.14-blue?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
 [![Status](https://img.shields.io/badge/Status-Active-brightgreen?style=for-the-badge)]()
 [![License](https://img.shields.io/badge/License-MIT-success?style=for-the-badge)](LICENSE)
 ![Visitors](https://api.visitorbadge.io/api/visitors?path=github.com/rajveerexe/PycDecompiler&label=Visitors&countColor=%2300ff99&style=for-the-badge)
@@ -25,7 +25,7 @@
 
 - Convert **marshal-based Python files** into valid `.pyc` bytecode files
 - Decompile `.pyc` files back into **readable Python source code**
-- Handle **multiple Python versions automatically** (3.6 through 3.13)
+- Handle **multiple Python versions automatically** (3.6 through 3.14)
 - Detect file types automatically and process accordingly
 
 > ⚠️ **Important**: This tool operates strictly at the bytecode/marshal layer and does not crack encryption or bypass licensing mechanisms.
@@ -44,7 +44,7 @@
 
 - 🧠 **Marshal → PYC Conversion** - Transform marshal files into proper bytecode
 - 🧩 **PYC → Source Decompilation** - Recover readable Python source code
-- 🔢 **Multi-Version Support** - Compatible with Python 3.6 through 3.13
+- 🔢 **Multi-Version Support** - Compatible with Python 3.6 through 3.14
 - 🎯 **Automatic Detection** - Intelligently detects marshal and PYC files
 - ⚡ **Fast & Automated** - Streamlined workflow with minimal manual intervention
 - 🖥️ **Interactive Menu** - User-friendly interface for easy operation
@@ -92,6 +92,7 @@ Recovered Python Source
 | Python 3.11 | `A7 0D 0D 0A` | ✅ Supported |
 | Python 3.12 | `CB 0D 0D 0A` | ✅ Supported |
 | Python 3.13 | `F3 0D 0D 0A` | ✅ Supported |
+| Python 3.14 | `2B 0E 0D 0A` | ✅ Supported |
 
 ---
 
@@ -194,6 +195,7 @@ Available Python Versions:
 [ 6 ] Python 3.11
 [ 7 ] Python 3.12
 [ 8 ] Python 3.13
+[ 9 ] Python 3.14
 [ 0 ] Current Version (3.11)
 
 [ ? ] Select version: 0
@@ -303,6 +305,7 @@ magic_map = {
     "3.11": b"\xa7\r\r\n\x00\x00\x00\x004\x0eAi\n\x00\x00\x00",
     "3.12": b"\xcb\r\r\n\x00\x00\x00\x00{\x0eAi\n\x00\x00\x00",
     "3.13": b"\xf3\r\r\n\x00\x00\x00\x00\x90\x0eAi\n\x00\x00\x00",
+    "3.14": b"+\x0e\r\n\x00\x00\x00\x00\x7f\xf8\xbfj\x0f\x00\x00\x00",
 }
 ```
 
