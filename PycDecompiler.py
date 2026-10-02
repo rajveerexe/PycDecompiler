@@ -46,6 +46,7 @@ magic_map = {
     "3.11": b"\xa7\r\r\n\x00\x00\x00\x004\x0eAi\n\x00\x00\x00",
     "3.12": b"\xcb\r\r\n\x00\x00\x00\x00{\x0eAi\n\x00\x00\x00",
     "3.13": b"\xf3\r\r\n\x00\x00\x00\x00\x90\x0eAi\n\x00\x00\x00",
+    "3.14": b"+\x0e\r\n\x00\x00\x00\x00\x7f\xf8\xbfj\x0f\x00\x00\x00",
 }
 
 
@@ -54,7 +55,7 @@ def get_pyc_magic(pyver: str) -> bytes:
 
 
 def print_banner():
-    text = f"{'=' * 55}\n    ____        __    _                         __\n   / __ \\__  __/ /   (_)___  ____ ___  ______ _/ /\n  / /_/ / / / / /   / / __ \\/ __ `/ / / / __ `/ /\n / ____/ /_/ / /___/ / / / / /_/ / /_/ / /_/ / /\n/_/    \\__, /_____/_/_/ /_/\\__, /\\__,_/\\__,_/_/\n      /____/              /____/\n{'=' * 55}\n{'P Y L I N G U A L'.center(55)}\n{'=' * 55}\n[ + ] Program:\n    -> Marshal/PYC Converter & Decompiler\n    \n[ * ] Features:\n    -> Convert Marshal to PYC (Python 3.6-3.13)\n    -> Decompile PYC to Python Source\n    \n[ </> ] Developer:\n    -> Github   : @rajveerexe\n    -> Telegram : @SoukPy\n{'=' * 55}"
+    text = f"{'=' * 55}\n    ____        __    _                         __\n   / __ \\__  __/ /   (_)___  ____ ___  ______ _/ /\n  / /_/ / / / / /   / / __ \\/ __ `/ / / / __ `/ /\n / ____/ /_/ / /___/ / / / / /_/ / /_/ / /_/ / /\n/_/    \\__, /_____/_/_/ /_/\\__, /\\__,_/\\__,_/_/\n      /____/              /____/\n{'=' * 55}\n{'P Y L I N G U A L'.center(55)}\n{'=' * 55}\n[ + ] Program:\n    -> Marshal/PYC Converter & Decompiler\n    \n[ * ] Features:\n    -> Convert Marshal to PYC (Python 3.6-3.14)\n    -> Decompile PYC to Python Source\n    \n[ </> ] Developer:\n    -> Github   : @rajveerexe\n    -> Telegram : @SoukPy\n{'=' * 55}"
     print(text)
 
 
